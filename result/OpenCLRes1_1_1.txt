@@ -1,0 +1,5 @@
+>sample
+Platform profile     : FULL_PROFILE
+Platform version     : OpenCL 2.1
+     Device vender   : Intel(R) Corporation
+     Device name     : Intel(R) HD Graphics 520
