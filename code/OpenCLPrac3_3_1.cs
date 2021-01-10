@@ -102,7 +102,9 @@ partial class Program
 
 
         // request execute kernel
-        status = clEnqueueTask(queue, kernel, 0, null, IntPtr.Zero);
+        IntPtr[] globalSize = { (IntPtr)C.Length };
+        status = clEnqueueNDRangeKernel(queue, kernel, 1, null,
+            globalSize, null, 0, null, IntPtr.Zero);
         if (status != CL_SUCCESS)
             throw new Exception("clEnqueueTask failed.");
 
