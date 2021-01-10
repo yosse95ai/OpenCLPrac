@@ -29,3 +29,19 @@
 $ diff result/OpenCLPrac3_1_1.txt result/OpenCLPrac3_1_2.txt 
 $ #何も表示されない
 ```
+
+## OpenCLPrac3_2_1
+
+ホストプログラムとカーネルプログラムを分離.
+
+カーネルを変更したとしてもホストをリコンパイルする必要なし.
+
+__cl__ フォルダはOpenCL共通ファイルが保存されている.
+
+| ファイル名 | 説明 |
+|-----------|------|
+|clConstants.cs|共通ファイル. OPenCLに関する定数を定義.|
+|clStruct.cs|共通ファイル. OpenCLに関する構造体を定義.|
+|clDll.cs|共通ファイル. OpenCL APIに関する定義を行う.|
+|Program.cs|前節のMainに相当. <br>前節との相違はカーネルを外部から読み込むこと.|
+
