@@ -16,4 +16,4 @@
 
 ## OpenCLPrac3_1_2
 
-[OpenCLPrac3_1_1](openclprac3_1_1)をOpenCLを用いてプログラムした場合.
+[OpenCLPrac3_1_1](#openclprac3_1_1)をOpenCLを用いてプログラムした場合.
