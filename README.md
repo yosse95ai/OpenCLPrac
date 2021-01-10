@@ -25,7 +25,7 @@
 
 ちなみに
 
-```bash
+```fish
 yosse95ai$ diff result/OpenCLPrac3_1_1.txt result/OpenCLPrac3_1_2.txt 
 yosse95ai$ 
 ```
