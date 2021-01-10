@@ -22,3 +22,10 @@
 ## OpenCLPrac3_1_2
 
 [OpenCLPrac3_1_1](#openclprac3_1_1)をOpenCLを用いてプログラムした場合.
+
+ちなみに
+
+```(console)
+$ diff result/OpenCLPrac3_1_1.txt result/OpenCLPrac3_1_2.txt 
+yosse95ai@DESKTOP-0VUOA39:OpenCLPrac$ 
+```
