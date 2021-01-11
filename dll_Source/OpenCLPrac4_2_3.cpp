@@ -7,7 +7,7 @@
 extern "C"
 {
 #endif // __cplusplus 
-	void __declspec(dllexport) __stdcall dllfloat(float inInt);
+	void __declspec(dllexport) __stdcall dllfloat(float inFloat);
 	void __declspec(dllexport) __stdcall dlldouble(double inDouble);
 
 
