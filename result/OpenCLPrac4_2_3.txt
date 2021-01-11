@@ -1,0 +1,4 @@
+>sample2
+inFloat=3.141592741013
+inFloat=3.141592741013
+inDouble=3.141592653590
