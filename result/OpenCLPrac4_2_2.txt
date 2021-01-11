@@ -1,0 +1,6 @@
+>sample2
+inInt=-3
+inUint=32767
+inShort=-444
+inShort=333
+inLong=-32767

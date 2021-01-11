@@ -115,4 +115,7 @@ __C#とDLLのデータ型対応表__
 
 C#のChar型とC/C++のcharは異なる.
 
-これ以降, __dll_Source__ にdllのもととなるC++のソースコードを入れる.
+これ以降, [__dll_Source__](https://github.com/yosse95ai/OpenCLPrac/tree/master/dll_Source) にdllのもととなるC++のソースコードを入れる.
+
+### OpenCLPrac4_2_2
+
