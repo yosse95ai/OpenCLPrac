@@ -128,3 +128,12 @@ C#のChar型とC/C++のcharは異なる.
 `float`, `Single`, `double`型を渡す.
 
 ## 4-3 アンマネージからマネージへデータを返す
+### OpenCLPrac4_3_1
+
+`ref`や`out`をつけた引数は __アドレス(ポインタ)渡し__ と等価.
+
+| C/C++          | C#       |
+| -------------- | -------- |
+| unsigned char* | ref byte |
+| int*           | ref int  |
+

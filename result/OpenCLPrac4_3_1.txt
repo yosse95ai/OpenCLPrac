@@ -1,0 +1,8 @@
+>sample2
+before dll call, data = 65
+inByte=65
+after dll call, data = 70
+---------------
+before dll call, data = 1000
+inInt=1000
+after dll call, data = 1024
