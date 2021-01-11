@@ -1,0 +1,7 @@
+>sample2
+img->width = 5
+img->height = 5
+img->pixels = 5
+format.width  = 320
+format.height = 240
+format.pixels = 32
