@@ -78,9 +78,34 @@ $ diff code/OpenCLPrac3_2_1.cs code/OpenCLPrac3_3_1.cs
 
 
 ## 3-4 カーネルの引数にコンスタント
+### OpenCLPrac3_4_1
 
 カーネルの引数にコンスタント(スカラ変数)を与える.
 
 うまくいかなかったので [telatail](https://teratail.com/questions/315257?modal=q-comp)にて質問中.
 
 \(カーネルは[kernel3_4_1](https://github.com/yosse95ai/OpenCLPrac/tree/master/kernel3_4_1)\)
+
+
+---
+## マネージプログラムとアンマネージプログラム間のデータ交換
+### OpenCLPrac4_1_1
+__C#とDLLのデータ型対応表__
+
+| C#<br>マネージ | .NET Framework表現<br>マネージ | アンマネージ                  |
+| :------------- | :----------------------------: | :---------------------------- |
+| bool           |            Boolean             | int<br>long                   |
+| byte           |              Byte              | unsigned char                 |
+| char           |              Char              | char                          |
+| short          |             Int16              | short                         |
+| ushort         |             UInt16             | unsigned short                |
+| int            |             Int31              | int<br> long                  |
+| uint           |             UInt32             | unsigned int<br>unsigned long |
+| long           |             Int64              | long long                     |
+| float          |             Signal             | float                         |
+| double         |             Double             | double                        |
+| byte\[\]       |            Byte\[\]            | unsigned char*                |
+| T\[\]          |             T\[\]              | T*                            |
+| ulong          |             Uint64             | size_t                        |
+| -              |       Text.StringBuilder       | char*                         |
+| string         |             String             | const char*                   |
