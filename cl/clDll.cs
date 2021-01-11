@@ -27,7 +27,7 @@ partial class Program
     //----------------------------------------------------------------------
     private const String clPath = @"OpenCL.dll";
 
-    //----------------------------------------------------------------------
+    //------------------------------------------------
     //cl_int clGetPlatformIDs ( cl_uint um_entries,
     //                          cl_platformid *platforms,
     //                          cl_uint *num_platforms )
@@ -38,8 +38,22 @@ partial class Program
         out uint num_platforms
         );
 
+    //------------------------------------------------
+    //cl_int clGetPlatformInfo( cl_platform_id platform,
+    //                          cl_platform_info param_name,
+    //                          size_t pram_value_size,
+    //                          void *param_value,
+    //                          size_t *param_value_size_ret )
+    [DllImport(clPath)]
+    public static extern int clGetPlatformInfo(
+        IntPtr platform,
+        int parameterName,
+        IntPtr parameterValueSize,
+        StringBuilder parameterValue,
+        out IntPtr parameterValueSizeReturn
+        );
 
-    //----------------------------------------------------------------------
+    //------------------------------------------------
     //cl_int clGetDeviceIDs(cl_platform_id platform,
     //                      cl_device_type device_type,
     //                      cl_uint num_entries,
@@ -52,6 +66,20 @@ partial class Program
         uint num_entries,
         IntPtr[] devices,
         out uint num_devices
+        );
+    //------------------------------------------------
+    //cl_int clGetDeviceInfo(   cl_device_id device,
+    //                          cl_device_info param_name,
+    //                          size_t param_value__size,
+    //                          void *param_value,
+    //                          size_t *param_value_size_ret )
+    [DllImport(clPath)]
+    public static extern int clGetDeviceInfo(
+        IntPtr device,
+        int paramName,
+        IntPtr paramValueSize,
+        StringBuilder paramValue,
+        out IntPtr paramValueSizeReturn
         );
 
     //----------------------------------------------------------------------
@@ -201,6 +229,78 @@ partial class Program
         IntPtr offset,
         IntPtr size,
         IntPtr ptr,
+        uint num_events_in_wait_list,
+        IntPtr[] event_wait_list,
+        IntPtr eventObj
+        );
+
+    //----------------------------------------------------------------------
+    //cl_int clEnqueueReadImage(cl_command_queue command_queue,
+    //                          cl_mem image,
+    //                          cl_bool clocking_read,
+    //                          const size_t *origin,
+    //                          const size_t *region,
+    //                          size_t row_pitch,
+    //                          size_t slice_pitch,
+    //                          void *ptr,
+    //                          cl_uint num_events_in_wait_list,
+    //                          const cl_event *event_wiat_list,
+    //                          cl_event *event )
+    [DllImport(clPath)]
+    public static extern int clEnqueueReadImage(
+        IntPtr command_queue,
+        IntPtr image,
+        uint blocking_read,
+        IntPtr[] origin,
+        IntPtr[] region,
+        IntPtr row_pitch,
+        IntPtr slice_pitch,
+        IntPtr ptr,
+        uint num_events_in_wait_list,
+        IntPtr[] event_wait_list,
+        IntPtr eventObj
+        );
+
+    //----------------------------------------------------------------------
+    //cl_int clEnqueueFillImage(cl_command_queue command_queue,
+    //                          cl_mem image,
+    //                          const void *fill_color,
+    //                          const size_t *origin,
+    //                          const size_t *region,
+    //                          size_t row_pitch,
+    //                          cl_uint num_events_in_wait_list,
+    //                          const cl_event *event_wiat_list,
+    //                          cl_event *event )
+    [DllImport(clPath)]
+    public static extern int clEnqueueFillImage(
+        IntPtr command_queue,
+        IntPtr image,
+        IntPtr fill_color,
+        IntPtr[] origin,
+        IntPtr[] region,
+        uint num_events_in_wait_list,
+        IntPtr[] event_wait_list,
+        IntPtr eventObj
+        );
+
+    //----------------------------------------------------------------------
+    //cl_int clEnqueueNDRangeKernel(cl_command_queue,
+    //                              cl_kernel kernel,
+    //                              cl_uint work_dim,
+    //                              const size_t *global_work_offset,
+    //                              const size_t *global_work_size,
+    //                              const size_t +loval_work_size,
+    //                              cl_uint num_events_in_wait_list,
+    //                              const cl_event *event_wait_list,
+    //                              cl_event *event )
+    [DllImport(clPath)]
+    public static extern int clEnqueueNDRangeKernel(
+        IntPtr command_queue,
+        IntPtr kernel,
+        uint work_dim,
+        IntPtr[] global_work_offset,
+        IntPtr[] global_work_size,
+        IntPtr[] local_work_size,
         uint num_events_in_wait_list,
         IntPtr[] event_wait_list,
         IntPtr eventObj
