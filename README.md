@@ -8,7 +8,7 @@ CONCEPT: C# × OpenCL
 ---
 
 ## 1-1 プロフィールを表示するプログラム
-### OpenCLPrac1_1_1
+### ●OpenCLPrac1_1_1
 
 コンピュータ内のプラットフォームを列挙し, それぞれのプラットフォーム内のデバイスを列挙.
 
@@ -19,11 +19,11 @@ CONCEPT: C# × OpenCL
 ---
 
 ## 3-1 配列乗算プログラム
-### OpenCLPrac3_1_1
+### ●OpenCLPrac3_1_1
 
 配列Aと配列Bの各要素を乗算し, 配列Cの対応する要素に格納.
 
-### OpenCLPrac3_1_2
+### ●OpenCLPrac3_1_2
 
 [OpenCLPrac3_1_1](#openclprac3_1_1)をOpenCLを用いてプログラムした場合.
 
@@ -33,7 +33,7 @@ $ diff result/OpenCLPrac3_1_1.txt result/OpenCLPrac3_1_2.txt
 $ #何も表示されない
 ```
 ## 3-2 カーネルプログラムの分離
-### OpenCLPrac3_2_1
+### ●OpenCLPrac3_2_1
 
 ホストプログラムとカーネルプログラムを分離.
 
@@ -52,7 +52,7 @@ __cl__ フォルダはOpenCL共通ファイルが保存されている.
 \(カーネルは[kernel3_2_1](https://github.com/yosse95ai/OpenCLPrac/tree/master/kernel3_2_1)\)
 
 ## 3-3 データ並列
-### OpenCLPrac3_3_1
+### ●OpenCLPrac3_3_1
 
 これまでタスク並列だったものを, データ並列のプログラムに書き換えた.
 
@@ -78,7 +78,7 @@ $ diff code/OpenCLPrac3_2_1.cs code/OpenCLPrac3_3_1.cs
 
 
 ## 3-4 カーネルの引数にコンスタント
-### OpenCLPrac3_4_1
+### ●OpenCLPrac3_4_1
 
 カーネルの引数にコンスタント(スカラ変数)を与える.
 
@@ -89,7 +89,7 @@ $ diff code/OpenCLPrac3_2_1.cs code/OpenCLPrac3_3_1.cs
 
 ---
 ## 4-1 マネージプログラムとアンマネージプログラム間のデータ交換
-### OpenCLPrac4_1_1
+### ●OpenCLPrac4_1_1
 __C#とDLLのデータ型対応表__
 
 | C#<br>マネージ | .NET Framework表現<br>マネージ | アンマネージ                  |
@@ -111,24 +111,24 @@ __C#とDLLのデータ型対応表__
 | string         |             String             | const char*                   |
 
 ## 4-2 マネージからアンマネージへデータを渡す
-### OpenCLPrac4_2_1
+### ●OpenCLPrac4_2_1
 
 C#のChar型とC/C++のcharは異なる.
 
 これ以降, [__dll_Source__](https://github.com/yosse95ai/OpenCLPrac/tree/master/dll_Source) にdllのもととなるC++のソースコードを入れる.
 
-### OpenCLPrac4_2_2
+### ●OpenCLPrac4_2_2
 
 `int`, `uint`, `short`, `long`について動作を確認.
 
-### OpenCLPrac4_2_3
+### ●OpenCLPrac4_2_3
 
 浮動小数点型をマネージからアンマネージへ渡す.
 
 `float`, `Single`, `double`型を渡す.
 
 ## 4-3 アンマネージからマネージへデータを返す
-### OpenCLPrac4_3_1
+### ●OpenCLPrac4_3_1
 
 `ref`や`out`をつけた引数は __アドレス(ポインタ)渡し__ と等価.
 
@@ -138,7 +138,7 @@ C#のChar型とC/C++のcharは異なる.
 | int*           | ref int  |
 
 ## 4-4 文字列の受け渡し
-### OpenCLPrac4_4_1
+### ●OpenCLPrac4_4_1
 
 C/C++には文字列型が存在せず, 配列で処理している.
 
