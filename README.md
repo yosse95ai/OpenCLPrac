@@ -81,4 +81,6 @@ $ diff code/OpenCLPrac3_2_1.cs code/OpenCLPrac3_3_1.cs
 
 カーネルの引数にコンスタント(スカラ変数)を与える.
 
-うまくいかなかったので, [telatail](https://teratail.com/questions/315257?modal=q-comp)にて質問中.
+うまくいかなかったので [telatail](https://teratail.com/questions/315257?modal=q-comp)にて質問中.
+
+\(カーネルは[kernel3_4_1](https://github.com/yosse95ai/OpenCLPrac/tree/master/kernel3_4_1)\)
