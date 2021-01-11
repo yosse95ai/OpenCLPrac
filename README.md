@@ -119,3 +119,5 @@ C#のChar型とC/C++のcharは異なる.
 
 ### OpenCLPrac4_2_2
 
+`int`, `uint`, `short`, `long`について動作を確認.
+
