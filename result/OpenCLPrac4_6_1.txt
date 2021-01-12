@@ -1,0 +1,45 @@
+>sample2
+=====< byte[]/ unsigned char[]>=====
+buffer[0] = 0
+buffer[1] = 1
+buffer[2] = 2
+buffer[3] = 3
+buffer[4] = 4
+buffer[5] = 5
+buffer[6] = 6
+buffer[7] = 7
+buffer[8] = 8
+buffer[9] = 9
+----------
+byteAeeay[0] = 1
+byteAeeay[1] = 2
+byteAeeay[2] = 3
+byteAeeay[3] = 4
+byteAeeay[4] = 5
+byteAeeay[5] = 6
+byteAeeay[6] = 7
+byteAeeay[7] = 8
+byteAeeay[8] = 9
+byteAeeay[9] = 10
+=====< float[] >====================
+buffer[0] = 0.120000
+buffer[1] = 1.120000
+buffer[2] = 2.120000
+buffer[3] = 3.120000
+buffer[4] = 4.120000
+buffer[5] = 5.120000
+buffer[6] = 6.120000
+buffer[7] = 7.120000
+buffer[8] = 8.120000
+buffer[9] = 9.120000
+----------
+dllFloatArray[0] = 1.22
+dllFloatArray[1] = 2.22
+dllFloatArray[2] = 3.22
+dllFloatArray[3] = 4.22
+dllFloatArray[4] = 5.22
+dllFloatArray[5] = 6.22
+dllFloatArray[6] = 7.22
+dllFloatArray[7] = 8.22
+dllFloatArray[8] = 9.22
+dllFloatArray[9] = 10.22
