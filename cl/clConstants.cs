@@ -43,8 +43,8 @@ partial class Program
 
     // cl_bool
     private const int CL_FALSE = 0;
-    private const int CL_TURE = 1;
-    private const int CL_BLOCKING = CL_TURE;
+    private const int CL_TRUE = 1;
+    private const int CL_BLOCKING = CL_TRUE;
     private const int CL_NON_BLOCKING = CL_FALSE;
 
     // cl_mem_flags - bitfield

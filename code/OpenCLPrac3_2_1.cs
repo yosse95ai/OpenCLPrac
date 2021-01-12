@@ -109,7 +109,7 @@ partial class Program
 
         // obtain results
         handle = GCHandle.Alloc(C, GCHandleType.Pinned);
-        status = clEnqueueReadBuffer(queue, memC, CL_TURE, (IntPtr)0,
+        status = clEnqueueReadBuffer(queue, memC, CL_TRUE, (IntPtr)0,
             (IntPtr)(Marshal.SizeOf(typeof(float)) * C.Length), handle.AddrOfPinnedObject(),
             0, null, IntPtr.Zero);
 
