@@ -49,7 +49,7 @@ __cl__ フォルダはOpenCL共通ファイルが保存されている.
  | Program.cs     | 前節のMainに相当. <br>前節との相違はカーネルを外部から読み込むこと. |
 
 
-\(カーネルは[kernel3_2_1](https://github.com/yosse95ai/OpenCLPrac/tree/master/kernel3_2_1)\)
+\(カーネルは[kernel3_2_1](https://github.com/yosse95ai/OpenCLPrac/tree/master/kernel/kernel3_2_1)\)
 
 ## 3-3 データ並列
 ### ●OpenCLPrac3_3_1
@@ -69,7 +69,7 @@ $ diff code/OpenCLPrac3_2_1.cs code/OpenCLPrac3_3_1.cs
 ```
 
 
-\(カーネルは[kernel3_3_1](https://github.com/yosse95ai/OpenCLPrac/tree/master/kernel3_3_1)\)
+\(カーネルは[kernel3_3_1](https://github.com/yosse95ai/OpenCLPrac/tree/master/kernel/kernel3_3_1)\)
 
 
 データ並列で実行されるため, カーネルには各要素\(データ\)iに対する処理だけを記述.
@@ -82,7 +82,7 @@ $ diff code/OpenCLPrac3_2_1.cs code/OpenCLPrac3_3_1.cs
 
 カーネルの引数にコンスタント(スカラ変数)を与える.
 
-\(カーネルは[kernel3_4_1](https://github.com/yosse95ai/OpenCLPrac/tree/master/kernel3_4_1)\)
+\(カーネルは[kernel3_4_1](https://github.com/yosse95ai/OpenCLPrac/tree/master/kernel/kernel3_4_1)\)
 
 
 ---
@@ -180,7 +180,7 @@ DLL呼び出しを単にラップする.
 
 を新規追加.
 
-\(カーネルは[kernel5_5_1](https://github.com/yosse95ai/OpenCLPrac/tree/master/kernel5_5_1)\)
+\(カーネルは[kernel5_5_1](https://github.com/yosse95ai/OpenCLPrac/tree/master/kernel/kernel5_5_1)\)
 
 ## 5-2 カーネルの引数にコンスタント
 ### ●OpenCLPrac5_2_1
