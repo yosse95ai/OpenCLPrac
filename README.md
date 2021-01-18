@@ -194,3 +194,71 @@ DLL呼び出しを単にラップする.
 このため，配列Aや配列Bのようにバッファオブジェクトを生成する必要はなく，変数を直接カーネルへわたす．
 
 \(カーネルは[kernel5_2_1](https://github.com/yosse95ai/OpenCLPrac/tree/master/kernel/kernel5_2_1)\)
+
+## 5-3 二次元配列
+### ●OpenCLPrac5_3_1
+
+二次元配列を扱う例．
+
+`clEnqueueNDRangeKernel()`の第3引数に`2`を指定.
+
+これは __2次元配列__ を処理することを意味する．
+
+これに伴い第5引数である`globalSize`は要素数が2に代わる．
+
+それぞれが要素の範囲を表す．
+
+この値はカーネルの`get_global_id`組み込み関数と対応する．
+
+---
+
+## 移動平均
+この章で紹介するプログラムは，単純なローパスフィルタ処理という感じ．
+
+### ●移動平均とは
+ある系列データを平滑化する方法．
+
+一般的には，__株価の移動平均線__ や単純な __平滑化フィルタ__ に使われる．
+
+単純な有限応答\(finite impulse response, FIR\)のローパスフィルタと考えるといい.
+
+移動平均には，
+- __単純移動平均__
+- __加重移動平均__
+- __指数移動平均__
+
+の3種類が存在．
+
+通常，移動平均といえば単純移動平均のことを指し，ここでも使う．
+
+単純移動平均\(Simple Moving Average, SMA\)は，直近の __*n*__ 個の単純な平均を計算するだけ.
+
+例えば，*w*この単純移動平均とは，直近の*w*個の平均．
+
+つまり各データを D<sub>n</sub>とすると，この単純な移動平均を求める式は，
+
+$$
+(単純移動平均) = \frac{\sum_{n=0}^{w-1}D_n}{w}
+$$
+
+次の移動平均を求めるには，新たな数値を加え，一番古い数値を除くだけで計算できる．
+
+$$
+(次の移動平均値) = (直前の値) - \frac{D_0}{w} + \frac{D_w}{w}
+$$
+
+実際のプログラムでは，*w*で除算した値を加減算すると誤差が大きくなるため，総和に対して数値そのものを加減算し，その総和を*w*で除算する.
+
+<div class="flow">
+st=>$$\sum_{n=0}^{w-1}D_n$$: Start:>http://www.google.com[blank]
+e=>end:>http://www.google.com
+op1=>operation: My Operation
+sub1=>subroutine: My Subroutine
+cond=>condition: Yes
+or No?:>http://www.google.com
+io=>inputoutput: catch something...
+
+st->op1->cond
+cond(yes)->io->e
+cond(no)->sub1(right)->op1
+</div>
