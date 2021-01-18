@@ -180,7 +180,7 @@ DLL呼び出しを単にラップする.
 
 を新規追加.
 
-\(カーネルは[kernel5_5_1](https://github.com/yosse95ai/OpenCLPrac/tree/master/kernel/kernel5_5_1)\)
+\(カーネルは[kernel5_1_1](https://github.com/yosse95ai/OpenCLPrac/tree/master/kernel/kernel5_1_1)\)
 
 ## 5-2 カーネルの引数にコンスタント
 ### ●OpenCLPrac5_2_1
