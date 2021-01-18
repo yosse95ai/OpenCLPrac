@@ -249,16 +249,6 @@ $$
 
 実際のプログラムでは，*w*で除算した値を加減算すると誤差が大きくなるため，総和に対して数値そのものを加減算し，その総和を*w*で除算する.
 
-<div class="flow">
-st=>$$\sum_{n=0}^{w-1}D_n$$: Start:>http://www.google.com[blank]
-e=>end:>http://www.google.com
-op1=>operation: My Operation
-sub1=>subroutine: My Subroutine
-cond=>condition: Yes
-or No?:>http://www.google.com
-io=>inputoutput: catch something...
+計算方式は以下の通り.
 
-st->op1->cond
-cond(yes)->io->e
-cond(no)->sub1(right)->op1
-</div>
+![calcurateImage](https://github.com/yosse95ai/OpenCLPrac/blob/master/image/calcImage.png)
