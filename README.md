@@ -172,9 +172,16 @@ DLL側の引数は構造体のポインタとする.
 ---
 
 ## 5-1 APIをラップ
+### ●OpenCLPrac5_1_1
 
 DLL呼び出しを単にラップする.
 
 - [cl/clApiWrappers.cs](https://github.com/yosse95ai/OpenCLPrac/blob/master/cl/clApiWrappers.cs): OpenCL APIラッパー
 
 を新規追加.
+
+\(カーネルは[kernel5_5_1](https://github.com/yosse95ai/OpenCLPrac/tree/master/kernel5_5_1)\)
+
+## 5-2 カーネルの引数にコンスタント
+### ●OpenCLPrac5_2_1
+
