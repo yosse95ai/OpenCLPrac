@@ -176,7 +176,9 @@ DLL側の引数は構造体のポインタとする.
 
 DLL呼び出しを単にラップする.
 
-- [cl/clApiWrappers.cs](https://github.com/yosse95ai/OpenCLPrac/blob/master/cl/clApiWrappers.cs): OpenCL APIラッパー
+| ファイル名          | 説明               |
+| ------------------- | ------------------ |
+| cl/clApiWrappers.cs | OpenCL APIラッパー |
 
 を新規追加.
 
