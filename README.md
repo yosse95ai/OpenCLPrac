@@ -169,3 +169,12 @@ DLL側の引数は構造体のポインタとする.
 
 他にも引数に「 __コールバック関数を渡す__」, 「 __Aliasを使用してDLL関数名を変更する__」, 「 __DLL関数をDEFファイルで定義する__」, 「 __DLLの変数をC#から調節参照する__」方法も考えられる.
 
+---
+
+## 5-1 APIをラップ
+
+DLL呼び出しを単にラップする.
+
+- [cl/clApiWrappers.cs](https://github.com/yosse95ai/OpenCLPrac/blob/master/cl/clApiWrappers.cs): OpenCL APIラッパー
+
+を新規追加.
