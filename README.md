@@ -282,6 +282,6 @@ OpenCLPrac6_2_1をタスク並列処理に書き換えたもの．
 
 OpenCLPrac6_3_1をデータ並列処理に書き換えたもの．
 
-\(カーネルは[kernel6_3_1](https://github.com/yosse95ai/OpenCLPrac/tree/master/kernel/kernel6_4_1)\)
+\(カーネルは[kernel6_4_1](https://github.com/yosse95ai/OpenCLPrac/tree/master/kernel/kernel6_4_1)\)
 
 結果は一緒．
