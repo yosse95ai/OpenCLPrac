@@ -177,7 +177,7 @@ DLL側の引数は構造体のポインタとする.
 DLL呼び出しを単にラップする.
 
 | ファイル名          | 説明               |
-|:------------------- | :----------------- |
+| :------------------ | :----------------- |
 | cl/clApiWrappers.cs | OpenCL APIラッパー |
 
 を新規追加.
@@ -268,3 +268,9 @@ DLL呼び出しを単にラップする.
 OpenCLPrac6_2_1をタスク並列処理に書き換えたもの．
 
 \(カーネルは[kernel6_3_1](https://github.com/yosse95ai/OpenCLPrac/tree/master/kernel/kernel6_3_1)\)
+
+ローパスフィルタの結果
+
+| Original                                                                    | lowPass                                                                     |
+| :---------------------------------------------------------------------------: | :---------------------------------------------------------------------------: |
+| ![fig1](https://github.com/yosse95ai/OpenCLPrac/blob/master/image/fig1.png) | ![fig2](https://github.com/yosse95ai/OpenCLPrac/blob/master/image/fig2.png) |
