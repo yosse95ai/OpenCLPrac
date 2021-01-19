@@ -237,6 +237,8 @@ DLL呼び出しを単にラップする.
 
 つまり各データを D<sub>n</sub>とすると，この単純な移動平均を求める式は，
 
+< img src="https://render.githubusercontent.com/render/math?math= (LaTeX) " >
+
 
 次の移動平均を求めるには，新たな数値を加え，一番古い数値を除くだけで計算できる．
 
@@ -248,9 +250,7 @@ $$
 
 計算方式は以下の通り.
 
-```math
-(次の移動平均値) = (直前の値) - \frac{D_0}{w} + \frac{D_w}{w}
-```
+![calcurateImage](https://github.com/yosse95ai/OpenCLPrac/blob/master/image/calcImage.png)
 
 ### ●OpenCLPrac6_2_1
 処理概念は図で示す．
