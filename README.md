@@ -297,14 +297,14 @@ OpenCLには`ベクタ型`と呼ばれるデータ型が用意されている.
 
 `int2型`：ベクタ型
 
-| left data                                                                      | lowPass                                                                         |
-| ----------------------------------------------------------------------------- | ------------------------------------------------------------------------------- |
-| ![data1](https://github.com/yosse95ai/OpenCLPrac/blob/master/image/data01.png) | ![res1](https://github.com/yosse95ai/OpenCLPrac/blob/master/image/result01.png) |
+| right data                                                                     | windowSize(10)                                                                  | windowSize(100) |
+| ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------- | --------------- |
+| ![data1](https://github.com/yosse95ai/OpenCLPrac/blob/master/image/data01.png) | ![res1](https://github.com/yosse95ai/OpenCLPrac/blob/master/image/result01.png) |                 | ![res1_100](https://github.com/yosse95ai/OpenCLPrac/blob/master/image/result01_100.png) |
 
 
-| right data                                                                      | lowPass                                                                         |
-| ----------------------------------------------------------------------------- | ------------------------------------------------------------------------------- |
-| ![data2](https://github.com/yosse95ai/OpenCLPrac/blob/master/image/data02.png) | ![res2](https://github.com/yosse95ai/OpenCLPrac/blob/master/image/result02.png) |
+| right data                                                                     | windowSize(10)                                                                  | windowSize(100)                                                                         |
+| ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
+| ![data2](https://github.com/yosse95ai/OpenCLPrac/blob/master/image/data02.png) | ![res2](https://github.com/yosse95ai/OpenCLPrac/blob/master/image/result02.png) | ![res2_100](https://github.com/yosse95ai/OpenCLPrac/blob/master/image/result02_100.png) |
 
 
 \(カーネルは[kernel6_4_1](https://github.com/yosse95ai/OpenCLPrac/tree/master/kernel/kernel6_5_1)\)
