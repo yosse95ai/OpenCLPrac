@@ -299,7 +299,7 @@ OpenCLには`ベクタ型`と呼ばれるデータ型が用意されている.
 
 | right data                                                                     | windowSize(10)                                                                  | windowSize(100) |
 | ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------- | --------------- |
-| ![data1](https://github.com/yosse95ai/OpenCLPrac/blob/master/image/data01.png) | ![res1](https://github.com/yosse95ai/OpenCLPrac/blob/master/image/result01.png) |                 | ![res1_100](https://github.com/yosse95ai/OpenCLPrac/blob/master/image/result01_100.png) |
+| ![data1](https://github.com/yosse95ai/OpenCLPrac/blob/master/image/data01.png) | ![res1](https://github.com/yosse95ai/OpenCLPrac/blob/master/image/result01.png) | ![res1_100](https://github.com/yosse95ai/OpenCLPrac/blob/master/image/result01_100.png) |
 
 
 | right data                                                                     | windowSize(10)                                                                  | windowSize(100)                                                                         |
