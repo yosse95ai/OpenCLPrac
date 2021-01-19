@@ -285,3 +285,23 @@ OpenCLPrac6_3_1をデータ並列処理に書き換えたもの．
 \(カーネルは[kernel6_4_1](https://github.com/yosse95ai/OpenCLPrac/tree/master/kernel/kernel6_4_1)\)
 
 結果は一緒．
+
+## ベクタ型・タスク並列による移動平均
+### ●OpenCLPrac6_5_1
+
+OpenCLには`ベクタ型`と呼ばれるデータ型が用意されている.
+
+名前が表すように，スカラではないベクタデータを一回で操作できる便利な型．
+
+ベクタ型を用いると複数のデータを一回の操作で処理できる．
+
+`int2型`：ベクタ型
+
+| original                                                                      | lowPass                                                                         |
+| ----------------------------------------------------------------------------- | ------------------------------------------------------------------------------- |
+| ![data1](https://github.com/yosse95ai/OpenCLPrac/blob/master/image/data01.png) | ![res1](https://github.com/yosse95ai/OpenCLPrac/blob/master/image/result01.png) |
+
+
+| original                                                                      | lowPass                                                                         |
+| ----------------------------------------------------------------------------- | ------------------------------------------------------------------------------- |
+| ![data2](https://github.com/yosse95ai/OpenCLPrac/blob/master/image/data02.png) | ![res2](https://github.com/yosse95ai/OpenCLPrac/blob/master/image/result02.png) |
