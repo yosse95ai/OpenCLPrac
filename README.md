@@ -297,11 +297,11 @@ OpenCLには`ベクタ型`と呼ばれるデータ型が用意されている.
 
 `int2型`：ベクタ型
 
-| original                                                                      | lowPass                                                                         |
+| left data                                                                      | lowPass                                                                         |
 | ----------------------------------------------------------------------------- | ------------------------------------------------------------------------------- |
 | ![data1](https://github.com/yosse95ai/OpenCLPrac/blob/master/image/data01.png) | ![res1](https://github.com/yosse95ai/OpenCLPrac/blob/master/image/result01.png) |
 
 
-| original                                                                      | lowPass                                                                         |
+| right data                                                                      | lowPass                                                                         |
 | ----------------------------------------------------------------------------- | ------------------------------------------------------------------------------- |
 | ![data2](https://github.com/yosse95ai/OpenCLPrac/blob/master/image/data02.png) | ![res2](https://github.com/yosse95ai/OpenCLPrac/blob/master/image/result02.png) |
