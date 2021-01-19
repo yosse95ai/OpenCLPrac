@@ -237,7 +237,7 @@ DLL呼び出しを単にラップする.
 
 つまり各データを D<sub>n</sub>とすると，この単純な移動平均を求める式は，
 
-<img src="https://latex.codecogs.com/gif.latex?O_t=\begin{align*}\frac{1}{2}\end{align*}" /> 
+<img src = "https://render.githubusercontent.com/render/math?math=e^ { i \ p i} = -1">
 
 
 次の移動平均を求めるには，新たな数値を加え，一番古い数値を除くだけで計算できる．
