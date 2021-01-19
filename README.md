@@ -249,12 +249,14 @@ DLL呼び出しを単にラップする.
 
 計算方式は以下の通り.
 
-![calcurateImage](https://github.com/yosse95ai/OpenCLPrac/blob/master/image/calcImage.png)
+| ![calcurateImage](https://github.com/yosse95ai/OpenCLPrac/blob/master/image/calcImage.png) |
+| ------------------------------------------------------------------------------------------ |
 
 ### ●OpenCLPrac6_2_1
 処理概念は図で示す．
 
-![algoImage](https://github.com/yosse95ai/OpenCLPrac/blob/master/image/algoImage.png)
+| ![algoImage](https://github.com/yosse95ai/OpenCLPrac/blob/master/image/algoImage.png) |
+| ------------------------------------------------------------------------------------- |
 
 データファイルは[image/random.txt](https://github.com/yosse95ai/OpenCLPrac/blob/master/image/random.txt)を用いる．
 
@@ -271,6 +273,6 @@ OpenCLPrac6_2_1をタスク並列処理に書き換えたもの．
 
 ローパスフィルタの結果
 
-| Original                                                                    | lowPass                                                                     |
-| :---------------------------------------------------------------------------: | :---------------------------------------------------------------------------: |
+|                                  Original                                   |                                   lowPass                                   |
+| :-------------------------------------------------------------------------: | :-------------------------------------------------------------------------: |
 | ![fig1](https://github.com/yosse95ai/OpenCLPrac/blob/master/image/fig1.png) | ![fig2](https://github.com/yosse95ai/OpenCLPrac/blob/master/image/fig2.png) |
