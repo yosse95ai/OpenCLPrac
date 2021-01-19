@@ -276,3 +276,12 @@ OpenCLPrac6_2_1をタスク並列処理に書き換えたもの．
 |                                  Original                                   |                                   lowPass                                   |
 | :-------------------------------------------------------------------------: | :-------------------------------------------------------------------------: |
 | ![fig1](https://github.com/yosse95ai/OpenCLPrac/blob/master/image/fig1.png) | ![fig2](https://github.com/yosse95ai/OpenCLPrac/blob/master/image/fig2.png) |
+
+## データ並列による移動平均
+### ●OpenCLPrac6_4_1
+
+OpenCLPrac6_3_1をデータ並列処理に書き換えたもの．
+
+\(カーネルは[kernel6_3_1](https://github.com/yosse95ai/OpenCLPrac/tree/master/kernel/kernel6_4_1)\)
+
+結果は一緒．
