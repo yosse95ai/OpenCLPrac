@@ -307,4 +307,11 @@ OpenCLには`ベクタ型`と呼ばれるデータ型が用意されている.
 | ![data2](https://github.com/yosse95ai/OpenCLPrac/blob/master/image/data02.png) | ![res2](https://github.com/yosse95ai/OpenCLPrac/blob/master/image/result02.png) | ![res2_100](https://github.com/yosse95ai/OpenCLPrac/blob/master/image/result02_100.png) |
 
 
-\(カーネルは[kernel6_4_1](https://github.com/yosse95ai/OpenCLPrac/tree/master/kernel/kernel6_5_1)\)
+\(カーネルは[kernel6_5_1](https://github.com/yosse95ai/OpenCLPrac/tree/master/kernel/kernel6_5_1)\)
+
+## ベクタ型・データ並列による移動平均
+### ●OpenCLPrac6_6_1
+
+OpenCLPrac6_5_1をデータ並列に書き換えたもの．
+
+\(カーネルは[kernel6_6_1](https://github.com/yosse95ai/OpenCLPrac/tree/master/kernel/kernel6_6_1)\)
