@@ -237,7 +237,8 @@ DLL呼び出しを単にラップする.
 
 つまり各データを D<sub>n</sub>とすると，この単純な移動平均を求める式は，
 
-< img src="https://render.githubusercontent.com/render/math?math=(単純移動平均) = \frac{\sum_{n=0}^{w-1}D_n}{w} " >
+<img src="https://latex.codecogs.com/gif.latex?\inline&space;X[n]&space;\in&space;\mathbb{C}" />
+
 
 
 次の移動平均を求めるには，新たな数値を加え，一番古い数値を除くだけで計算できる．
