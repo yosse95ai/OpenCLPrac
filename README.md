@@ -242,7 +242,7 @@ DLL呼び出しを単にラップする.
 次の移動平均を求めるには，新たな数値を加え，一番古い数値を除くだけで計算できる．
 
 
-(次の移動平均値) = (直前の値) - \frac{D_0}{w} + \frac{D_w}{w}
+<img src="https://render.githubusercontent.com/render/math?math=next%20SMA=previous%20SMA-%20\frac{D_0}{w}%20+%20\frac{D_w}{w}">
 
 
 実際のプログラムでは，*w*で除算した値を加減算すると誤差が大きくなるため，総和に対して数値そのものを加減算し，その総和を*w*で除算する.
