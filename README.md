@@ -305,3 +305,6 @@ OpenCLには`ベクタ型`と呼ばれるデータ型が用意されている.
 | right data                                                                      | lowPass                                                                         |
 | ----------------------------------------------------------------------------- | ------------------------------------------------------------------------------- |
 | ![data2](https://github.com/yosse95ai/OpenCLPrac/blob/master/image/data02.png) | ![res2](https://github.com/yosse95ai/OpenCLPrac/blob/master/image/result02.png) |
+
+
+\(カーネルは[kernel6_4_1](https://github.com/yosse95ai/OpenCLPrac/tree/master/kernel/kernel6_5_1)\)
