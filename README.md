@@ -252,3 +252,12 @@ $$
 計算方式は以下の通り.
 
 ![calcurateImage](https://github.com/yosse95ai/OpenCLPrac/blob/master/image/calcImage.png)
+
+### ●OpenCLPrac6_2_1
+処理概念は図で示す．
+
+![algoImage](https://github.com/yosse95ai/OpenCLPrac/blob/master/image/algoImage.png)
+
+この例では，移動平均対象個数を5としている．このため，移動平均した値を書く方する配列の先頭「移動平均対象の個数-1」個はデータが格納されない.
+
+データファイルは[image/random.txt](https://github.com/yosse95ai/OpenCLPrac/blob/master/image/random.txt)を用いる．
