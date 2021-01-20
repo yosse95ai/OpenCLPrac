@@ -320,8 +320,19 @@ OpenCLPrac6_5_1をデータ並列に書き換えたもの．
 以下では，新たに追加した`cl/bmp.cs`の関数の説明をする.
 
 #### (1)readBmp()
-画像ファイルをImageクラスのFromFileメソッドで読込，Bitmapオブジェクトを返す．
+画像ファイルを`Imageクラス`の`FromFileメソッド`で読込，`Bitmapオブジェクト`を返す．
 
 読み込むファイルはFromFileメソッドが対応している形式であれば何でもいい.
 
 #### (2)bmp2byteArray()
+`Bitmapオブジェクト`の画像部分を`バイト配列`へ変換する．
+
+メモリをロックする範囲を指定する`Rectangleオブジェクト`を引数のBitmapオブジェクトのWidthプロパティとHeightプロパティから生成する．ロックする範囲は画像全域．
+
+次に，`BitMapDataオブジェクト` `bmpData`をBitmapオブジェクトの`LockBitsメソッド`で作成する．この時，Bitmapオブジェクトをシステムのメモリにロックする．第1引数に先ほど生成したRectangleオブジェクトを指定する．第2引数に読み込むのみであることを指定し，第3引数に`PixelFormat.Format32bppArgb`を指定する．この`PixelFormat.Format32bppArgb`でロックしたBitmapのメモリの形式が決まる．LockBitsメソッドの返却値をBitMapDataオブジェクト`bmpData`に保存する．
+
+次にバイト配列`rgbaMat`を生成する．大きさはBitmapDataオブジェクトの`Strideプロパティ`と`Heightプロパティ`を乗算して求める．このプログラムのフォーマットにPixelFormat.Format32bppArgbを採用しているため，Strideプロパティを使用せずwidthプロパティに4を乗じた値を使用しても構わないが今後のプログラム拡張などを考えて，安全なStirdeプロパティを使用する．
+
+次に確保したバイト配列へ，ビットマップ先頭スキャンラインからコピーする．コピーは`Marshal.Copy()`を使用します.
+
+#### (3)
