@@ -297,8 +297,8 @@ OpenCLには`ベクタ型`と呼ばれるデータ型が用意されている.
 
 `int2型`：ベクタ型
 
-| right data                                                                     | windowSize(10)                                                                  | windowSize(100) |
-| ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------- | --------------- |
+| right data                                                                     | windowSize(10)                                                                  | windowSize(100)                                                                         |
+| ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
 | ![data1](https://github.com/yosse95ai/OpenCLPrac/blob/master/image/data01.png) | ![res1](https://github.com/yosse95ai/OpenCLPrac/blob/master/image/result01.png) | ![res1_100](https://github.com/yosse95ai/OpenCLPrac/blob/master/image/result01_100.png) |
 
 
@@ -371,3 +371,24 @@ byteArray2bmp()のオーバーロードである.
 書き込むファイル形式は渡されたファイル名の拡張子で決まる．ファイル形式はSaveメソッドが対応して入れヴぁなんでも可能だが，このメソッドではjpegファイルとbitmapファイルのみに対応している.
 
 ## 簡単な画像処理プログラム
+### ●OpenCLPrac7_2_1
+
+- `grayscale.cl` : 入力画像のグレイスケール化
+- `mirror.cl` : 入力画像の左右反転
+- `negative.cl` : 入力画像のカラー反転
+- `upsidedown.cl` : 入力画像の上下反転
+
+| 入力画像                                                                                      |
+| --------------------------------------------------------------------------------------------- |
+| ![input](https://github.com/yosse95ai/OpenCLPrac/blob/master/result/OpenCLPrac7_2_1/lena.jpg) |
+
+| grayscale                                                                                              | mirror                                                                                           |
+| ------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------ |
+| ![grayscale](https://github.com/yosse95ai/OpenCLPrac/blob/master/result/OpenCLPrac7_2_1/grayscale.jpg) | ![mirror](https://github.com/yosse95ai/OpenCLPrac/blob/master/result/OpenCLPrac7_2_1/mirror.jpg) |
+ 
+| negative                                                                                              | upsidedown                                                                                       |
+| ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| ![grayscale](https://github.com/yosse95ai/OpenCLPrac/blob/master/result/OpenCLPrac7_2_1/negative.jpg) | ![mirror](https://github.com/yosse95ai/OpenCLPrac/blob/master/result/OpenCLPrac7_2_1/mirror.jpg) |
+ 
+
+\(カーネルは[kernel7_2_1](https://github.com/yosse95ai/OpenCLPrac/tree/master/kernel/kernel7_2_1)\)
