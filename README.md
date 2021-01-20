@@ -317,10 +317,10 @@ OpenCLPrac6_5_1をデータ並列に書き換えたもの．
 \(カーネルは[kernel6_6_1](https://github.com/yosse95ai/OpenCLPrac/tree/master/kernel/kernel6_6_1)\)
 
 ## 7-1 画像ファイル処理
-以下では，新たに追加した`cl/bmp.cs`の関数の説明をする.
+以下では，新たに追加した __`cl/bmp.cs`__ の関数の説明をする.
 
 #### (1)readBmp()
-画像ファイルを`Imageクラス`の`FromFileメソッド`で読込，`Bitmapオブジェクト`を返す．
+画像ファイルを __`Imageクラス`__ の __`FromFileメソッド`__ で読込， __`Bitmapオブジェクト`__ を返す．
 
 読み込むファイルはFromFileメソッドが対応している形式であれば何でもいい.
 
