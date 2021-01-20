@@ -277,7 +277,7 @@ OpenCLPrac6_2_1をタスク並列処理に書き換えたもの．
 | :-------------------------------------------------------------------------: | :-------------------------------------------------------------------------: |
 | ![fig1](https://github.com/yosse95ai/OpenCLPrac/blob/master/image/fig1.png) | ![fig2](https://github.com/yosse95ai/OpenCLPrac/blob/master/image/fig2.png) |
 
-## データ並列による移動平均
+## 6-4 データ並列による移動平均
 ### ●OpenCLPrac6_4_1
 
 OpenCLPrac6_3_1をデータ並列処理に書き換えたもの．
@@ -286,7 +286,7 @@ OpenCLPrac6_3_1をデータ並列処理に書き換えたもの．
 
 結果は一緒．
 
-## ベクタ型・タスク並列による移動平均
+## 6-5 ベクタ型・タスク並列による移動平均
 ### ●OpenCLPrac6_5_1
 
 OpenCLには`ベクタ型`と呼ばれるデータ型が用意されている.
@@ -309,9 +309,19 @@ OpenCLには`ベクタ型`と呼ばれるデータ型が用意されている.
 
 \(カーネルは[kernel6_5_1](https://github.com/yosse95ai/OpenCLPrac/tree/master/kernel/kernel6_5_1)\)
 
-## ベクタ型・データ並列による移動平均
+## 6-6 ベクタ型・データ並列による移動平均
 ### ●OpenCLPrac6_6_1
 
 OpenCLPrac6_5_1をデータ並列に書き換えたもの．
 
 \(カーネルは[kernel6_6_1](https://github.com/yosse95ai/OpenCLPrac/tree/master/kernel/kernel6_6_1)\)
+
+## 7-1 画像ファイル処理
+以下では，新たに追加した`cl/bmp.cs`の関数の説明をする.
+
+#### (1)readBmp()
+画像ファイルをImageクラスのFromFileメソッドで読込，Bitmapオブジェクトを返す．
+
+読み込むファイルはFromFileメソッドが対応している形式であれば何でもいい.
+
+#### (2)bmp2byteArray()
