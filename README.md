@@ -325,14 +325,14 @@ OpenCLPrac6_5_1をデータ並列に書き換えたもの．
 読み込むファイルはFromFileメソッドが対応している形式であれば何でもいい.
 
 #### (2)bmp2byteArray()
-`Bitmapオブジェクト`の画像部分を`バイト配列`へ変換する．
+__`Bitmapオブジェクト`__ の画像部分を __`バイト配列`__ へ変換する．
 
-メモリをロックする範囲を指定する`Rectangleオブジェクト`を引数のBitmapオブジェクトのWidthプロパティとHeightプロパティから生成する．ロックする範囲は画像全域．
+メモリをロックする範囲を指定する __`Rectangleオブジェクト`__ を引数のBitmapオブジェクトのWidthプロパティとHeightプロパティから生成する．ロックする範囲は画像全域．
 
-次に，`BitMapDataオブジェクト` `bmpData`をBitmapオブジェクトの`LockBitsメソッド`で作成する．この時，Bitmapオブジェクトをシステムのメモリにロックする．第1引数に先ほど生成したRectangleオブジェクトを指定する．第2引数に読み込むのみであることを指定し，第3引数に`PixelFormat.Format32bppArgb`を指定する．この`PixelFormat.Format32bppArgb`でロックしたBitmapのメモリの形式が決まる．LockBitsメソッドの返却値をBitMapDataオブジェクト`bmpData`に保存する．
+次に，__`BitMapDataオブジェクト`__ __`bmpData`__ をBitmapオブジェクトの __`LockBitsメソッド`__ で作成する．この時，Bitmapオブジェクトをシステムのメモリにロックする．第1引数に先ほど生成したRectangleオブジェクトを指定する．第2引数に読み込むのみであることを指定し，第3引数に __`PixelFormat.Format32bppArgb`__ を指定する．この __`PixelFormat.Format32bppArgb`__ でロックしたBitmapのメモリの形式が決まる．LockBitsメソッドの返却値をBitMapDataオブジェクト __`bmpData`__ に保存する．
 
-次にバイト配列`rgbaMat`を生成する．大きさはBitmapDataオブジェクトの`Strideプロパティ`と`Heightプロパティ`を乗算して求める．このプログラムのフォーマットにPixelFormat.Format32bppArgbを採用しているため，Strideプロパティを使用せずwidthプロパティに4を乗じた値を使用しても構わないが今後のプログラム拡張などを考えて，安全なStirdeプロパティを使用する．
+次にバイト配列 __`rgbaMat`__ を生成する．大きさはBitmapDataオブジェクトの __`Strideプロパティ`__ と __`Heightプロパティ`__ を乗算して求める．このプログラムのフォーマットにPixelFormat.Format32bppArgbを採用しているため，Strideプロパティを使用せずwidthプロパティに4を乗じた値を使用しても構わないが今後のプログラム拡張などを考えて，安全なStirdeプロパティを使用する．
 
-次に確保したバイト配列へ，ビットマップ先頭スキャンラインからコピーする．コピーは`Marshal.Copy()`を使用します.
+次に確保したバイト配列へ，ビットマップ先頭スキャンラインからコピーする．コピーは __`Marshal.Copy()`__ を使用します.
 
 #### (3)
