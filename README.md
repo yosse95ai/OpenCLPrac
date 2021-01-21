@@ -414,4 +414,7 @@ vectorLap8|vectorSharpen|vectorSoften
 :-|:-:|-:
 ![vectorLap8](https://github.com/yosse95ai/OpenCLPrac/blob/master/result/OpenCLPrac7_3_1/vectorLap8.bmp)|![vectorSharpen](https://github.com/yosse95ai/OpenCLPrac/blob/master/result/OpenCLPrac7_3_1/vectorSharpen.bmp)|![vectorSoften](https://github.com/yosse95ai/OpenCLPrac/blob/master/result/OpenCLPrac7_3_1/vectorSoften.bmp)
 
+同じ結果になっていることが分かる．
+
 \(カーネルは[kernel7_3_1](https://github.com/yosse95ai/OpenCLPrac/tree/master/kernel/kernel7_3_1)\)
+
