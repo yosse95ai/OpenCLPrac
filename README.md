@@ -392,3 +392,26 @@ byteArray2bmp()のオーバーロードである.
  
 
 \(カーネルは[kernel7_2_1](https://github.com/yosse95ai/OpenCLPrac/tree/master/kernel/kernel7_2_1)\)
+
+## 簡単なフィルタプログラム
+### ●OpenCLPrac7_3_1
+
+- `lap8.cl` : ラプラシアンフィルタ
+- `sharpen.cl` : エッジ強調フィルタ
+- `soften.cl` : ソフトフォーカスフィルタ
+
+上記のvector型使用バージョン
+
+- `vectorLap8.cl` : ラプラシアンフィルタ
+- `vectorSharpen.cl` : エッジ強調フィルタ
+- `vectorSoften.cl` : ソフトフォーカスフィルタ
+
+lap8|sharpen|soften
+:-|:-:|-:
+![lap8](https://github.com/yosse95ai/OpenCLPrac/blob/master/result/OpenCLPrac7_3_1/lap8.jpg)|![sharpen](https://github.com/yosse95ai/OpenCLPrac/blob/master/result/OpenCLPrac7_3_1/sharpen.jpg)|![soften](https://github.com/yosse95ai/OpenCLPrac/blob/master/result/OpenCLPrac7_3_1/soften.jpg)
+
+vectorLap8|vectorSharpen|vectorSoften
+:-|:-:|-:
+![vectorLap8](https://github.com/yosse95ai/OpenCLPrac/blob/master/result/OpenCLPrac7_3_1/vectorLap8.jpg)|![vectorSharpen](https://github.com/yosse95ai/OpenCLPrac/blob/master/result/OpenCLPrac7_3_1/vectorSharpen.jpg)|![vectorSoften](https://github.com/yosse95ai/OpenCLPrac/blob/master/result/OpenCLPrac7_3_1/vectorSoften.jpg)
+
+\(カーネルは[kernel7_3_1](https://github.com/yosse95ai/OpenCLPrac/tree/master/kernel/kernel7_3_1)\)
