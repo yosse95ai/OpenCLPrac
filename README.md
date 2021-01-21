@@ -416,5 +416,7 @@ vectorLap8|vectorSharpen|vectorSoften
 
 同じ結果になっていることが分かる．
 
+mainプログラムはOpenCLPrac7_2_1と同じ．
+
 \(カーネルは[kernel7_3_1](https://github.com/yosse95ai/OpenCLPrac/tree/master/kernel/kernel7_3_1)\)
 
