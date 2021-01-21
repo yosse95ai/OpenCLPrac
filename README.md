@@ -408,10 +408,10 @@ byteArray2bmp()のオーバーロードである.
 
 lap8|sharpen|soften
 :-|:-:|-:
-![lap8](https://github.com/yosse95ai/OpenCLPrac/blob/master/result/OpenCLPrac7_3_1/lap8.jpg)|![sharpen](https://github.com/yosse95ai/OpenCLPrac/blob/master/result/OpenCLPrac7_3_1/sharpen.jpg)|![soften](https://github.com/yosse95ai/OpenCLPrac/blob/master/result/OpenCLPrac7_3_1/soften.jpg)
+![lap8](https://github.com/yosse95ai/OpenCLPrac/blob/master/result/OpenCLPrac7_3_1/lap8.bmp)|![sharpen](https://github.com/yosse95ai/OpenCLPrac/blob/master/result/OpenCLPrac7_3_1/sharpen.bmp)|![soften](https://github.com/yosse95ai/OpenCLPrac/blob/master/result/OpenCLPrac7_3_1/soften.bmp)
 
 vectorLap8|vectorSharpen|vectorSoften
 :-|:-:|-:
-![vectorLap8](https://github.com/yosse95ai/OpenCLPrac/blob/master/result/OpenCLPrac7_3_1/vectorLap8.jpg)|![vectorSharpen](https://github.com/yosse95ai/OpenCLPrac/blob/master/result/OpenCLPrac7_3_1/vectorSharpen.jpg)|![vectorSoften](https://github.com/yosse95ai/OpenCLPrac/blob/master/result/OpenCLPrac7_3_1/vectorSoften.jpg)
+![vectorLap8](https://github.com/yosse95ai/OpenCLPrac/blob/master/result/OpenCLPrac7_3_1/vectorLap8.bmp)|![vectorSharpen](https://github.com/yosse95ai/OpenCLPrac/blob/master/result/OpenCLPrac7_3_1/vectorSharpen.bmp)|![vectorSoften](https://github.com/yosse95ai/OpenCLPrac/blob/master/result/OpenCLPrac7_3_1/vectorSoften.bmp)
 
 \(カーネルは[kernel7_3_1](https://github.com/yosse95ai/OpenCLPrac/tree/master/kernel/kernel7_3_1)\)
