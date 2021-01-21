@@ -388,7 +388,7 @@ byteArray2bmp()のオーバーロードである.
  
 | negative                                                                                              | upsidedown                                                                                       |
 | ----------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
-| ![grayscale](https://github.com/yosse95ai/OpenCLPrac/blob/master/result/OpenCLPrac7_2_1/negative.jpg) | ![mirror](https://github.com/yosse95ai/OpenCLPrac/blob/master/result/OpenCLPrac7_2_1/mirror.jpg) |
+| ![negative](https://github.com/yosse95ai/OpenCLPrac/blob/master/result/OpenCLPrac7_2_1/negative.jpg) | ![upsidedown](https://github.com/yosse95ai/OpenCLPrac/blob/master/result/OpenCLPrac7_2_1/upsidedown.jpg) |
  
 
 \(カーネルは[kernel7_2_1](https://github.com/yosse95ai/OpenCLPrac/tree/master/kernel/kernel7_2_1)\)
