@@ -420,3 +420,9 @@ mainプログラムはOpenCLPrac7_2_1と同じ．
 
 \(カーネルは[kernel7_3_1](https://github.com/yosse95ai/OpenCLPrac/tree/master/kernel/kernel7_3_1)\)
 
+## イメージオブジェクトで画像処理
+### ●OpenCLPrac7_4_1
+
+結果は，前回と一緒．
+
+\(カーネルは[kernel7_4_1](https://github.com/yosse95ai/OpenCLPrac/tree/master/kernel/kernel7_4_1)\)
