@@ -454,3 +454,14 @@ lap8Grayscale|embossGrayscale|prewittGrayscale|sobelGrayscale
 ![lap8Grayscale](https://github.com/yosse95ai/OpenCLPrac/blob/master/result/OpenCLPrac7_5_1/lap8Grayscale.bmp)|![embossGrayscale](https://github.com/yosse95ai/OpenCLPrac/blob/master/result/OpenCLPrac7_5_1/embossGrayscale.bmp)|![prewittGrayscale](https://github.com/yosse95ai/OpenCLPrac/blob/master/result/OpenCLPrac7_5_1/prewittGrayscale.bmp)|![sobelGrayscale](https://github.com/yosse95ai/OpenCLPrac/blob/master/result/OpenCLPrac7_5_1/sobelGrayScale.bmp)
 
 ## 7-6 座標変換
+### ●OpenCLPrac7_6_1
+拡大縮小処理を行うカーネル
+
+- `zoomBilinear.cl` : 線形補完法補完
+- `zoomNearestNeaighbor.cl` : 最近傍法補完
+
+zoomBilinear|zoomNearestNeaighbor
+-|-
+![zoomBilinear](https://github.com/yosse95ai/OpenCLPrac/blob/master/result/OpenCLPrac7_6_1/zoomBilinear.bmp)|![zoomNearestNeaighbor](https://github.com/yosse95ai/OpenCLPrac/blob/master/result/OpenCLPrac7_6_1/zoomNearestNeaighbor.bmp)
+
+### ●OpenCLPrac7_6_2
