@@ -471,3 +471,13 @@ zoomBilinear|zoomNearestNeaighbor
 
 
 ### ●OpenCLPrac7_6_2
+回転を行うカーネル
+
+- `rotateBilinear.cl` : 線形補完法補完
+- `rotateNearestNeaighbor.cl` : 最近傍法補完
+
+rotateBilinear|rotateNearestNeaighbor
+-|-
+![rotateBilinear](https://github.com/yosse95ai/OpenCLPrac/blob/master/result/OpenCLPrac7_6_2/1_5rotateBilinear.bmp)|![rotateNearestNeaighbor](https://github.com/yosse95ai/OpenCLPrac/blob/master/result/OpenCLPrac7_6_2/1_5rotateNearestNeaighbor.bmp)
+
+\(カーネルは[kernel7_6_2](https://github.com/yosse95ai/OpenCLPrac/tree/master/kernel/kernel7_621)\)
