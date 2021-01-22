@@ -480,4 +480,4 @@ rotateBilinear|rotateNearestNeaighbor
 -|-
 ![rotateBilinear](https://github.com/yosse95ai/OpenCLPrac/blob/master/result/OpenCLPrac7_6_2/015_500rotateBilinear.bmp)|![rotateNearestNeaighbor](https://github.com/yosse95ai/OpenCLPrac/blob/master/result/OpenCLPrac7_6_2/015_500rotateNearestNeaighbor.bmp)
 
-\(カーネルは[kernel7_6_2](https://github.com/yosse95ai/OpenCLPrac/tree/master/kernel/kernel7_621)\)
+\(カーネルは[kernel7_6_2](https://github.com/yosse95ai/OpenCLPrac/tree/master/kernel/kernel7_6_2)\)
