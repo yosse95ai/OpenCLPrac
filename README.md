@@ -316,6 +316,8 @@ OpenCLPrac6_5_1をデータ並列に書き換えたもの．
 
 \(カーネルは[kernel6_6_1](https://github.com/yosse95ai/OpenCLPrac/tree/master/kernel/kernel6_6_1)\)
 
+---
+
 ## 7-1 画像ファイル処理
 以下では，新たに追加した __`cl/bmp.cs`__ の関数の説明をする.
 
@@ -370,7 +372,7 @@ byteArray2bmp()のオーバーロードである.
 
 書き込むファイル形式は渡されたファイル名の拡張子で決まる．ファイル形式はSaveメソッドが対応して入れヴぁなんでも可能だが，このメソッドではjpegファイルとbitmapファイルのみに対応している.
 
-## 簡単な画像処理プログラム
+## 7-2 簡単な画像処理プログラム
 ### ●OpenCLPrac7_2_1
 
 - `grayscale.cl` : 入力画像のグレイスケール化
@@ -393,7 +395,7 @@ byteArray2bmp()のオーバーロードである.
 
 \(カーネルは[kernel7_2_1](https://github.com/yosse95ai/OpenCLPrac/tree/master/kernel/kernel7_2_1)\)
 
-## 簡単なフィルタプログラム
+## 7-3 簡単なフィルタプログラム
 ### ●OpenCLPrac7_3_1
 
 - `lap8.cl` : ラプラシアンフィルタ
@@ -420,7 +422,7 @@ mainプログラムはOpenCLPrac7_2_1と同じ．
 
 \(カーネルは[kernel7_3_1](https://github.com/yosse95ai/OpenCLPrac/tree/master/kernel/kernel7_3_1)\)
 
-## イメージオブジェクトで画像処理
+## 7-4 イメージオブジェクトで画像処理
 ### ●OpenCLPrac7_4_1
 
 結果は，前回と一緒．
@@ -434,3 +436,17 @@ C#を使用すると画像フォーマットは簡単に指定できるため，
 これを使うと三次元配列までのデータを扱うのが容易になる．これらのオブジェクトは，補完などもサポートしているため，カーネルで保管処理を行う必要がなく，高速に処理できる．
 
 \(カーネルは[kernel7_4_1](https://github.com/yosse95ai/OpenCLPrac/tree/master/kernel/kernel7_4_1)\)
+
+## 7-5 複数のカーネル
+### ●OpenCLPrac7_5_1
+
+- `lap8Grayscale.cl` : ラプラシアンフィルタ
+- `embossGrayscale.cl` : エンボス変換
+- `prewittGrayscale.cl` : prewittフィルター
+- `sobelGrayscale.cl` : sobelフィルター
+
+カーネル中に二つのカーネルが含まれる．
+
+__グレースケール=(R\*0.298912)+(G\*0.586611)+(B\*0.114478)__
+
+## 7-6 座標変換
