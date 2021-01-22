@@ -449,4 +449,8 @@ C#を使用すると画像フォーマットは簡単に指定できるため，
 
 __グレースケール=(R\*0.298912)+(G\*0.586611)+(B\*0.114478)__
 
+lap8Grayscale|embossGrayscale|prewittGrayscale|sobelGrayscale
+:-|:-:|:-:|-:
+![lap8Grayscale](https://github.com/yosse95ai/OpenCLPrac/blob/master/result/OpenCLPrac7_3_1/lap8Grayscale.bmp)|![embossGrayscale](https://github.com/yosse95ai/OpenCLPrac/blob/master/result/OpenCLPrac7_3_1/vectembossGrayscaleorSharpen.bmp)|![prewittGrayscale](https://github.com/yosse95ai/OpenCLPrac/blob/master/result/OpenCLPrac7_3_1/prewittGrayscale.bmp)|![sobelGrayscale](https://github.com/yosse95ai/OpenCLPrac/blob/master/result/OpenCLPrac7_3_1/sobelGrayscale.bmp)
+
 ## 7-6 座標変換
