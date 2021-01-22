@@ -453,6 +453,9 @@ lap8Grayscale|embossGrayscale|prewittGrayscale|sobelGrayscale
 :-|:-:|:-:|-:
 ![lap8Grayscale](https://github.com/yosse95ai/OpenCLPrac/blob/master/result/OpenCLPrac7_5_1/lap8Grayscale.bmp)|![embossGrayscale](https://github.com/yosse95ai/OpenCLPrac/blob/master/result/OpenCLPrac7_5_1/embossGrayscale.bmp)|![prewittGrayscale](https://github.com/yosse95ai/OpenCLPrac/blob/master/result/OpenCLPrac7_5_1/prewittGrayscale.bmp)|![sobelGrayscale](https://github.com/yosse95ai/OpenCLPrac/blob/master/result/OpenCLPrac7_5_1/sobelGrayScale.bmp)
 
+\(カーネルは[kernel7_5_1](https://github.com/yosse95ai/OpenCLPrac/tree/master/kernel/kernel7_5_1)\)
+
+
 ## 7-6 座標変換
 ### ●OpenCLPrac7_6_1
 拡大縮小処理を行うカーネル
@@ -463,5 +466,8 @@ lap8Grayscale|embossGrayscale|prewittGrayscale|sobelGrayscale
 zoomBilinear|zoomNearestNeaighbor
 -|-
 ![zoomBilinear](https://github.com/yosse95ai/OpenCLPrac/blob/master/result/OpenCLPrac7_6_1/1_5zoomBilinear.bmp)|![zoomNearestNeaighbor](https://github.com/yosse95ai/OpenCLPrac/blob/master/result/OpenCLPrac7_6_1/1_5zoomNearestNeighbor.bmp)
+
+\(カーネルは[kernel7_6_1](https://github.com/yosse95ai/OpenCLPrac/tree/master/kernel/kernel7_6_1)\)
+
 
 ### ●OpenCLPrac7_6_2
