@@ -462,6 +462,6 @@ lap8Grayscale|embossGrayscale|prewittGrayscale|sobelGrayscale
 
 zoomBilinear|zoomNearestNeaighbor
 -|-
-![zoomBilinear](https://github.com/yosse95ai/OpenCLPrac/blob/master/result/OpenCLPrac7_6_1/zoomBilinear.bmp)|![zoomNearestNeaighbor](https://github.com/yosse95ai/OpenCLPrac/blob/master/result/OpenCLPrac7_6_1/zoomNearestNeaighbor.bmp)
+![zoomBilinear](https://github.com/yosse95ai/OpenCLPrac/blob/master/result/OpenCLPrac7_6_1/1_5zoomBilinear.bmp)|![zoomNearestNeaighbor](https://github.com/yosse95ai/OpenCLPrac/blob/master/result/OpenCLPrac7_6_1/1_5zoomNearestNeighbor.bmp)
 
 ### ●OpenCLPrac7_6_2
